@@ -15,7 +15,7 @@ import org.quandh.mathutil.core.MathUtility;
 public class MathUtilityAdvancedTest {
     // chuẩn bị data fill vào hàm
     // DDT
-    // hàm trả về mảng 2 chiều, kiue63 wrapper class
+    // hàm trả về mảng 2 chiều, kiểu wrapper class
     // mảng chứa các cặp n -> expected, vd 0! -> 1
     public static Object[][] initTestData(){
         Object[][] testData = {{0, 1}, 
@@ -30,7 +30,7 @@ public class MathUtilityAdvancedTest {
     @MethodSource("initTestData")
     public void testFactorialGivenRightArgument1ReturnsWell(int n, long expected) {
         //tham số hoá việc đưa test data vào hàm assertE()
-        //biến đổi dữ lieu5 thành tham số cho tổng quát
+        //biến đổi dữ liệu thành tham số cho tổng quát
         //PARAMETERIZED
         assertEquals(expected , MathUtility.getFactorial(n));
     }
